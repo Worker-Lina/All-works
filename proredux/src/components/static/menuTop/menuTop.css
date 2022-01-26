@@ -1,0 +1,166 @@
+.menuTop{
+    display: flex;
+    align-items: center;
+}
+.menu__list{
+    list-style: none;
+    padding: 0 35px;
+}
+.menu__list a{
+    text-decoration: none;
+    margin-right: 35px;
+    transition: .2s;
+}
+.menu__list a:hover{
+    opacity: .5;
+}
+@media(min-width:767px){
+    .menuTop{
+        display: flex;
+        align-items: center;
+    }
+    .menu__list{
+        display: flex;
+        align-items: center;
+    }
+    .menu__list > li{
+        padding: 10px 0;
+    }
+}
+@media(max-width:768px){
+    .menu__icon{
+        z-index: 5;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+    }
+    .menu__icon span,
+    .menu__icon::before,
+    .menu__icon::after{
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+    }
+    .menu__icon::before,
+    .menu__icon::after{
+        content: "";
+    }
+    .menu__icon::before{
+        top: 0;
+    }
+    .menu__icon::after{
+        bottom: 0;
+    }
+    .menu__icon span{
+        top:50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+    .menu__icon._active span{
+        transform: scale(0) translate(0px, -50%);
+    }
+    .menu__icon._active::before{
+        top:50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+    .menu__icon._active::after{
+        bottom:50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+    .menu__body{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        padding: 100px 30px 30px 30px;
+        transition: left 0.3s ease 0s;
+        overflow: auto;
+    }
+    .menu__body._active{
+        left:0;
+    }
+    .menu__body::before{
+        content: "";
+        position: fixed;
+        width: 100%;
+        top:0;
+        left:0;
+        height:70px;
+        z-index: 2;
+    }
+}
+
+
+
+
+
+
+
+.menu__ico{
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+}
+.menu__ico span,
+.menu__ico::before,
+.menu__ico::after{
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+}
+.menu__ico::before,
+.menu__ico::after{
+    content: "";
+}
+.menu__ico::before{
+    top: 0;
+}
+.menu__ico::after{
+    bottom: 0;
+}
+.menu__ico span{
+    top:50%;
+    transform: scale(1) translate(0px, -50%);
+}
+.menu__ico._active span{
+    transform: scale(0) translate(0px, -50%);
+}
+.menu__ico._active::before{
+    top:50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+}
+.menu__ico._active::after{
+    bottom:50%;
+    transform: rotate(45deg) translate(0px, 50%);
+}
+.menu__bod{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 100px 30px 30px 30px;
+    transition: left 0.3s ease 0s;
+    overflow: auto;
+}
+.menu__bod._active{
+    left:0;
+}
+.menu__bod::before{
+    content: "";
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    height:70px;
+    z-index: 2;
+}

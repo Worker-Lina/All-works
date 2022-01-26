@@ -1,0 +1,33 @@
+.basket h1{
+    text-align: center;
+}
+
+.cart{
+    border: 1px solid rgb(129, 129, 129);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.basket__img{
+    width: 200px;
+}
+
+.cart__item{
+    display: flex;
+    align-items: center;
+}
+.cart__item-price{
+    font-size: 24px;
+    font-weight: bold;
+}
+.product__amount{
+    width: 50px;
+    padding: 5px 0;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px;
+    
+}

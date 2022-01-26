@@ -1,0 +1,55 @@
+
+.container{
+    overflow: auto;
+    display: grid;
+   
+    gap: 10px;
+}
+.grid{
+    display: grid;
+    gap: 20px;
+    grid-row: 2/6;
+
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border: 1px solid black;
+    padding: 15px;
+
+}
+
+.filter{
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 3px 10px;
+    margin: 5px;
+    transition: all .4s;
+
+}
+.filterBar{
+    display: flex;
+    margin: 10px 0;
+    cursor: pointer;
+
+}
+
+.typeBar{
+    display: flex;
+    flex-direction: column;
+    grid-row: 1/6;
+
+
+}
+.typeBar__item{
+    border:1px solid rgb(99, 99, 99);
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .4s;
+}
+.typeBar__item:hover, .filter:hover{
+    background-color: rgb(7, 92, 189);
+    color: white;
+}
